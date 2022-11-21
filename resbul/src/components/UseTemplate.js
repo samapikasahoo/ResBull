@@ -49,7 +49,7 @@ function UseTemplate() {
     return (
       <div>
         <h1>   </h1>
-        <Link to="/"> Click to go back/Home page</Link>
+        <Link to="/"> </Link>
         <ResumeBuilder
         personalInfo={personalInfo}
         setPersonalInfo={setPersonalInfo}
