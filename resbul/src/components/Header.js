@@ -1,60 +1,47 @@
-
-import React from 'react';
+import React from "react";
+import { NavLink } from "react-router-dom";
 import logo from '../logo (1).png';
-import { Link, Outlet } from "react-router-dom";
 
+// this component returns our navbar ultimately //
 
-
-
-function Header() {
+function Header  ()  {
   return (
-    <div class="container-fluid">
-      <nav class=" navbar navbar-expand-lg 
-        navbar-light bg-light fixed-top py-lg-0 ">
-  
-        <a class="navbar-brand" href="#"></a>
-      <img src={logo} className="App-logo" alt="logo" />
-      <ul class="nav justify-content-end">
-  <li class="nav-item">
-  <a class="nav-link active" href="#">
-  <Link to=" ">
-     ResumeTemplates
-       
-</Link>
-</a>
-  </li>
- 
- 
-  <li class="nav-item">
-  <a class="nav-link active" href="#">
-  <Link to=" ">
-   My Resumes
-       
-</Link>
-</a>
-  </li>
-  <li class="nav-item">
-  <a class="nav-link active" href="#">
-  <Link to="contact">
-     About Us
-       
-</Link>
-</a>
-  </li>
- 
-</ul>
- 
-     
-    
-</nav>
+    <div className="navbar">
+      <div className="logo">
+        <NavLink to="/">
+          <img src={logo} alt="" width="120px" />
+        </NavLink>
+      </div>
 
-
-    
-    
-  
-  </div>
-
+      <div className="nav-links">
+        <ul>
+          <li>
+            <NavLink
+              to="/"
+              className={({ isActive }) => (isActive ? "activenav" : "")}
+            >
+              ResumeTemplates
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to=" "
+              className={({ isActive }) => (isActive ? "activenav" : "")}
+            >
+              My Resumes
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/contact"
+              className={({ isActive }) => (isActive ? "activenav" : "")}
+            >
+              About Us
+            </NavLink>
+          </li>
+        </ul>
+      </div>
+    </div>
   );
-}
-
+};
 export default Header;
