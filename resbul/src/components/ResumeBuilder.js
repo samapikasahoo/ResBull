@@ -4,7 +4,7 @@ import Template1 from "./Template1";
 import VerticalTabs from "./VerticalTabs";
 
 
-
+// this is our reusable componenet for the pages of our app //
 
 
 export default function ResumeBuilder(props) {
