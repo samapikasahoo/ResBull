@@ -6,7 +6,9 @@ import {
   faTwitter,
   faInstagram
 } from "@fortawesome/free-brands-svg-icons";
- 
+
+ // this component return About Us page and how to connect the socialFlow //
+
 export default function SocialFlow() {
     const styleObj = {
         fontSize: 14,
