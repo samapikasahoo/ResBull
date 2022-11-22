@@ -11,7 +11,7 @@ import Button from "@material-ui/core/Button";
 
 </style>
 </head>
- 
+ // this is our homepage which will route us to the necessary pages //
  
 function Home() {
  return (
