@@ -6,6 +6,8 @@ import ReactDOM from "react-dom";
 
 import ImageUploader from "./ImageUploader";
 
+// this component return us the Personal info  of Detail Filling Page//
+
 export default function PersonalInfo(props) {
  
   const {
@@ -27,6 +29,7 @@ export default function PersonalInfo(props) {
   return (
 
     <Box sx={{ flexGrow: 1 }}>
+   //Rendering the image uploader//
       <ImageUploader />;
       <Grid container spacing={2}>
         <Grid item xs={6}>
