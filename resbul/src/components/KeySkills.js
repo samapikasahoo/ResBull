@@ -4,6 +4,8 @@ import Grid from "@mui/material/Grid";
 import { Button, Divider, TextField } from "@mui/material";
 import ReactDOM from 'react-dom/client';
 import  { useState } from "react";
+
+// this component return us the Keyskills  of Detail Filling Page//
 export default function KeySkills(props) {
   const {
     keySkills,
