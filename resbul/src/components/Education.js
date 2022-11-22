@@ -3,6 +3,8 @@ import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import { Button, Divider, TextField } from "@mui/material";
 
+// this component return us the Education  of Detail Filling Page//
+
 export default function Education(props) {
   const {
     education,
