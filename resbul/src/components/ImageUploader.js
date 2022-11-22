@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+// this component returns our Image Uploader in Personal info page ultimately //
+
 const ImageUploader = () => {
   const [files, setFiles] = useState([]);
   const [images, setImages] = useState([]);
